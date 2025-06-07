@@ -1,0 +1,332 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --verde-main: #B9FF66;
+    --black-main: #191A23;
+    --white-main: #F3F3F3;
+    --font-main: "Space Grotesk", sans-serif;
+
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 70px 100px;
+}
+
+
+
+.bar-nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.bar-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.bar-nav a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.bar-nav button {
+    width: 220px;
+    height: 60px;
+    border-radius: 14px;
+    border: 1px solid black;
+    background-color: white;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+
+
+/*Section Home*/
+
+.container-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 70px 100px;
+}
+
+.main .left {
+    width: 531px;
+    height: 481px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.container-home .left h1 {
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 35px;
+    font-weight: 500px;
+
+}
+
+.container-home .left p {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.container-home .left button {
+    width: 264px;
+    height: 68px;
+    border-radius: 14px;
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+    background-color: black;
+}
+
+
+.empresas {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 100px;
+}
+
+/*Section Service*/
+
+.service {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.serv {
+    display: flex;
+    gap: 26px;
+
+}
+
+.serv h2 {
+    width: 178px;
+    height: 51px;
+    margin: 0;
+    background-color: var(--verde-main);
+    font-size: 40px;
+    border-radius: 7px;
+}
+
+.serv p {
+    width: 580px;
+    height: 51px;
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/*cartas*/
+
+.service .container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
+    gap: 40px 0;
+}
+
+.service .card{
+    width: 600px;
+    height: 310px;
+    border: 1px solid var(--black-main);
+    border-radius: 45px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1); /* Sombra con desenfoque */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.service  .left {
+    width: 221px;
+    height: 210px;
+    margin: 50px 50px;
+}
+
+.service .left h3 {
+    font-size: 27px;
+    margin: 0;
+    font-family: var(--font-main);
+    font-weight: 500;
+    border-radius: 7px;
+}
+
+.service  .left .leo {
+    display: inline-block;
+    width: 165px;
+}
+
+.service  .left .learn {
+    display: flex;
+    margin-top: 93px;
+    gap: 10px;
+}
+
+.service  .right {
+    margin: 50px 50px;
+}
+
+.service .container-cards .green {
+    background-color: var(--verde-main);
+}
+
+.service .container-cards .white {
+    background-color: var(--white-main);
+}
+
+.service .uno{
+    background-color: var(--white-main);
+   
+}
+.service .dos {
+    background-color: var(--verde-main);
+}
+
+
+.service .tres {
+    background-color: var(--black-main);
+}
+.service .tres p {
+    color: white;
+}
+
+
+.service .cuatro {
+    
+    background-color: var(--white-main);
+}
+.service .cinco {
+    background-color: var(--verde-main);
+}
+.service .seis {
+   
+    background-color: var(--black-main);
+}
+.service .seis p {
+    color: white;
+}
+
+
+.service .letsmake {
+    width: 1240px;
+    height: 347px;
+    background-color: var(--white-main);
+    margin: 100px 0;
+    border-radius: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.service .letsmake .left-text {
+    width: 500px;
+    height: 227px;
+    margin-left: 60px;
+
+}
+.service .letsmake .left-text h3 {
+    font-size: 30px;
+}
+
+.service .letsmake .left-text p {
+    font-size: 18px;
+}
+
+.service .letsmake .left-text button {
+    width: 288px;
+    height: 68px;
+    background-color: var(--black-main);
+    color: white;
+    font-size: 20px;
+    border-radius: 14px;
+    
+}
+
+.service .letsmake .image {
+    margin: 0;
+}
+
+/*Case Studies*/
+
+.case-studies {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+
+}
+
+.case-studies .case {
+    display: flex;
+    gap: 26px;
+}
+
+.case-studies .case h2 {
+    width: 265px;
+    height: 51px;
+    margin: 0;
+    background-color: var(--verde-main);
+    font-size: 40px;
+    border-radius: 7px;
+    
+}
+
+.case-studies .case p {
+    width: 580px;
+    height: 51px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.case-studies .case-cards {
+    width: 1234px;
+    height: 326px;
+    border-radius: 45px;
+    margin-top: 70px;
+    background-color: var(--black-main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.case-studies .case-cards .item {
+    width: 286px;
+    height: 163px;
+    margin-left: 60px;
+    color: white;
+    flex: 1;
+
+}
+
+.case-studies .case-cards .item:not(:first-child) {
+    border-left: 1px solid white ;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.case-studies .case-cards .item .learn {
+    display: flex;
+    gap: 10px;
+    color: var(--verde-main);
+}
+
