@@ -37,6 +37,7 @@ Solo es necesario un navegador web moderno.
 
 3. Abre el archivo index en tu navegador
 
-<a href="https://tu-usuario.github.io/positivus/" target="_blank">
-  <img src="https://img.shields.io/badge/Ver%20Demo-Visitar-blue?style=for-the-badge" alt="Demo">
+<a href="https://leonelher07.github.io/Positivus/" target="_blank">
+  🚀 Ver Demo
 </a>
+
