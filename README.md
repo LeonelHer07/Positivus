@@ -6,7 +6,6 @@
 
 La página describe cómo una agencia de marketing digital ayuda a las empresas a crecer y tener éxito en línea mediante servicios como **SEO**, **PPC**, **marketing en redes sociales** y **creación de contenido**.
 
-> Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.
 
 ## Tecnologías utilizadas
 
@@ -37,13 +36,3 @@ Solo es necesario un navegador web moderno.
     cd positivus
 
 3. Abre el archivo index en tu navegador
-
-## Estructura del proyecto
-positivus/
-│
-├── index.html
-├── styles/
-│   └── style.css
-└── assets/
-    └── fonts/
-    └── img/
