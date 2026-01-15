@@ -68,12 +68,11 @@ body {
     margin: 70px 100px;
 }
 
-.main .left {
+.container-home .left {
     width: 531px;
     height: 481px;
     display: flex;
     flex-direction: column;
-    align-items: left;
 }
 
 .container-home .left h1 {
@@ -81,6 +80,7 @@ body {
     margin: 0;
     margin-bottom: 35px;
     font-weight: 500px;
+    order: 1;
 
 }
 
@@ -88,6 +88,7 @@ body {
     font-size: 20px;
     margin: 0;
     margin-bottom: 35px;
+    order: 2;
 }
 
 .container-home .left button {
@@ -97,6 +98,13 @@ body {
     font-family: "Space Grotesk", sans-serif;
     color: white;
     background-color: black;
+    order: 3;
+}
+
+.container-home .left img {
+    order: 4;
+    margin-right: auto;
+    display: none;
 }
 
 
@@ -732,34 +740,123 @@ footer .container_foot .bot a {
 }
 
 /*Responsive*/
-@media (max-width: 1440px) {
+@media (max-width: 812px) {
+
+   body {
+    margin: 20px; 
+   } 
+    
+    header {
+        width: 100%;
+    }
+   
     .header {
-        margin: 70px 50px;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        max-width: 100%;
+        
     }
-    .container-home {
-        margin: 70px 50px;
+
+    main {
+        width: 100%;
     }
+
+    .header .logo img {
+        width: 80%;
+    }
+
+    .bar-nav{
+        display: none;
+    }
+
+
+    .container-home{
+        flex-direction: column;
+        margin: 0px;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .container-home .left {
+        height: auto;
+        width: 100%;
+    }
+
+
+    .container-home .left img {
+        order: 2;
+        display:block;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .container-home .left h1 {
+        order: 1;
+        font-size: 60px;
+        width: 100%;
+        
+    }
+
+    .container-home .right {
+        display: none;
+    }
+
+    .container-home .left p {
+        order: 3;
+        width: 100%;
+    }
+
+    .container-home .left button {
+        order: 4;
+        width: 100%;
+        height: 80px    ;
+    }
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
     .empresas {
         margin: 70px 50px;
+        display: none;
     }
     .service {
         margin: 0 50px;
+        display: none;
     }
     .case-studies {
         margin: 0 50px;
+        display: none;
     }
     .working_process {
         margin: 0 50px;
+        display: none;
     }
     .team {
         margin: 0 50px;
+        display: none;
     }
     .contact_us {
         margin: 0 50px;
+        display: none;
     }
     footer {
         margin: 0 50px;
         width: 1091px;
+        display: none;
     }
 }
 

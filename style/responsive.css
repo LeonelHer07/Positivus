@@ -1,0 +1,33 @@
+/*Responsive*/
+@media (max-width: 768px) {
+    .header {
+        margin: 70px 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-home {
+        margin: 70px 50px;
+    }
+    .empresas {
+        margin: 70px 50px;
+    }
+    .service {
+        margin: 0 50px;
+    }
+    .case-studies {
+        margin: 0 50px;
+    }
+    .working_process {
+        margin: 0 50px;
+    }
+    .team {
+        margin: 0 50px;
+    }
+    .contact_us {
+        margin: 0 50px;
+    }
+    footer {
+        margin: 0 50px;
+        width: 1091px;
+    }
+}
