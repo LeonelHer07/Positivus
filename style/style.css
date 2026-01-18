@@ -925,9 +925,56 @@ footer .container_foot .bot a {
 
 
     .service {
-        margin: 0 50px;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        
+    }
+
+    .service .serv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service .serv p {
+        width: 100%;
+    }
+
+    .service .container-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service .container-cards .card {
+        width: 100%;
+    }
+
+    .service .container-cards .right img {
+        width: 100%;
+    }
+     .service .letsmake {
+        width: 100%;
+        height: auto;
+        align-self: center;
+        padding-bottom: 30px;
+     }
+
+    .service .letsmake img {
         display: none;
     }
+
+
+
+
+
+
+
+
+
+
+
+
     .case-studies {
         margin: 0 50px;
         display: none;
