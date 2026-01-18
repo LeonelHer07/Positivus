@@ -108,10 +108,52 @@ body {
 }
 
 
+.ticket {
+  width: 100%;
+  overflow: hidden; /* recorta cualquier contenido que salga del viewport */
+  margin: 70px 0px;
+}
+
+/* Bloque que se anima */
 .empresas {
-    display: flex;
-    justify-content: space-between;
-    margin: 70px 100px;
+  display: flex;
+  width: max-content; /* ancho real de los dos grupos */
+  animation: tickerMove 20s linear infinite; /* duración ajustable según cantidad de logos */
+}
+
+/* Cada grupo de logos */
+.grupo {
+  display: flex;
+  gap: 128px; /* espacio entre logos */
+  margin-right: 128px;
+  
+}
+
+/* Logos individuales */
+.empresas a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empresas img {
+  height: 48px;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.empresas img:hover {
+  opacity: 1;
+}
+
+/* Animación infinita */
+@keyframes tickerMove {
+  from {
+    transform: translateX(0); /* empieza en la posición original */
+  }
+  to {
+    transform: translateX(-50%); /* mueve exactamente el ancho de un grupo */
+  }
 }
 
 /*Section Service*/
@@ -816,23 +858,72 @@ footer .container_foot .bot a {
     
 
 
-
-
-
-    
-
-
-
-
-
-
-
-
+    .ticket {
+        width: 100%;
+        overflow: hidden;
+    }
 
     .empresas {
-        margin: 70px 50px;
-        display: none;
+    display: flex;
+    width: max-content; /* ancho real de los dos grupos */
+    animation: tickerMove 20s linear infinite;
+    
+        
     }
+
+    .empresas .grupo {
+    display: flex;
+    gap: 32px; /* espacio entre logos */
+    margin-right: 32px;
+    }
+
+
+
+    .empresas a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .empresas img {
+        height: 48px;
+        opacity: 0.85;
+        transition: opacity 0.3s ease;
+    }
+
+    .empresas img:hover {
+        opacity: 1;
+    }
+
+    @keyframes tickerMove {
+        from {
+            transform: translateX(0); /* error intencional */
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .service {
         margin: 0 50px;
         display: none;
