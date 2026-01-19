@@ -222,11 +222,11 @@ body {
     font-family: var(--font-main);
     font-weight: 500;
     border-radius: 7px;
+    display: inline-block;
 }
 
 .service  .left .leo {
     display: inline-block;
-    width: 165px;
 }
 
 .service  .left .learn {
@@ -948,11 +948,37 @@ footer .container_foot .bot a {
 
     .service .container-cards .card {
         width: 100%;
+        height: auto;
+        padding: 0;
+        
     }
 
     .service .container-cards .right img {
         width: 100%;
+    
     }
+
+    .service .left {
+        width: 50%;
+        margin: 20px;
+    }
+
+    .service .left .learn {
+        margin-top: 50px;
+    }
+
+    .service .right {
+        margin: 0;
+    }
+
+    .service .left h3 {
+        font-size: 27px;
+        display: inline-block;
+        padding: 0;
+     
+
+    }
+
      .service .letsmake {
         width: 100%;
         height: auto;
@@ -962,6 +988,14 @@ footer .container_foot .bot a {
 
     .service .letsmake img {
         display: none;
+    }
+
+    .service .letsmake .left-text {
+        width: 70%;
+        height: auto;
+    }
+    .service .letsmake button {
+        max-width: 100%;
     }
 
    
