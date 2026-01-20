@@ -1011,13 +1011,96 @@ footer .container_foot .bot a {
 
 
     .case-studies {
-        margin: 0 50px;
-        display: none;
+        width: 100%;
+        margin: 0;
+        
+        
+        
     }
+
+    .case-studies .case{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .case-studies .case p {
+        max-width: 100%;
+        height: auto;
+        font-size: 15px;
+    }
+
+    .case-studies .case-cards {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .case-studies .case-cards .item {
+        max-width: 100%;
+        margin: 0;
+        
+    }
+
+    .case-studies .case-cards .item:not(:first-child) {
+        border-left: none;
+    }
+
+
+
+
     .working_process {
-        margin: 0 50px;
-        display: none;
+        width: 100%;
+        margin: 0;
+        
     }
+
+
+    .working_process .our_working_process {
+        flex-direction: column;
+        align-items: center;
+     
+    }
+
+    .working_process .our_working_process h2 {
+        max-width: 100%;
+        height: auto;
+        
+        
+    }
+
+    .working_process .our_working_process p {
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    .working_process .container_cards .item {
+        width: 100%;
+        height: auto;
+       
+    }
+
+    .working_process .container_cards .item .text {
+        max-width: 100%;
+        margin: 20px 20px;
+    }
+
+    .working_process .container_cards .text .number {
+    font-size: 30px;
+    
+    }
+
+    .working_process .container_cards .text .Consultation {
+    font-size: 20px;
+   
+    }
+
+    .working_process .container_cards .image {
+    margin-right: 30px;
+    }
+
+
+
     .team {
         margin: 0 50px;
         display: none;
