@@ -30,14 +30,15 @@ Solo es necesario un navegador web moderno.
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tu-usuario/positivus.git
+   ```
 
 2. Accede a la carpeta del proyecto:
-    ```bash
-    cd positivus
+   ```bash
+   cd positivus
+   ```
 
-3. Abre el archivo index en tu navegador
+3. Abre el archivo `index.html` en tu navegador.
 
 <a href="https://leonelher07.github.io/Positivus/" target="_blank">
   🚀 Ver Demo
 </a>
-
