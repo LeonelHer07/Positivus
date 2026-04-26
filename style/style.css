@@ -7,6 +7,7 @@
     --black-main: #191A23;
     --white-main: #F3F3F3;
     --white: #FFFFFF;
+    --gray-main: #666666;
     --font-main: "Space Grotesk", sans-serif;
 
 }
@@ -16,7 +17,7 @@ body {
     background-color: var(--white);
     margin: 0;
     padding: 0;
-    
+    overflow-x: hidden;
 }
 
 .header {
@@ -79,7 +80,7 @@ body {
     font-size: 60px;
     margin: 0;
     margin-bottom: 35px;
-    font-weight: 500px;
+    font-weight: 500;
     order: 1;
 
 }
@@ -162,6 +163,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 100px;
+    max-width: 1240px;
+    width: calc(100% - 200px);
 }
 
 .serv {
@@ -197,7 +200,7 @@ body {
 }
 
 .service .card{
-    width: 600px;
+    width: min(600px, 100%);
     height: 310px;
     border: 1px solid var(--black-main);
     border-radius: 45px;
@@ -281,7 +284,7 @@ body {
 
 
 .service .letsmake {
-    width: 1240px;
+    width: 100%;
     height: 347px;
     background-color: var(--white-main);
     margin: 100px 0;
@@ -326,6 +329,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 100px;
+    max-width: 1240px;
+    width: calc(100% - 200px);
 
 }
 
@@ -352,7 +357,7 @@ body {
 }
 
 .case-studies .case-cards {
-    width: 1234px;
+    width: 100%;
     height: 326px;
     border-radius: 45px;
     margin-top: 70px;
@@ -392,6 +397,8 @@ body {
     flex-direction: column;
     margin: 0 100px;
     margin-bottom: 70px;
+    max-width: 1240px;
+    width: calc(100% - 200px);
 
 }
 .working_process .our_working_process {
@@ -425,7 +432,7 @@ body {
 
 .working_process .container_cards .item {
     display: flex;
-    width: 1234px;
+    width: 100%;
     height: 159px;
     border-radius: 45px;
     border: solid 1px var(--black-main);
@@ -467,6 +474,8 @@ body {
     flex-direction: column;
     margin: 0 100px;
     margin-bottom: 70px;
+    max-width: 1240px;
+    width: calc(100% - 200px);
 
 }
 .team .meet_our_team {
@@ -495,7 +504,7 @@ body {
     margin-top: 70px;
 }
 .team .team_cards .card {
-    width: 387px;
+    width: min(387px, 100%);
     height: 354px;
     border-radius: 45px;
     border: solid 1px var(--black-main);
@@ -549,7 +558,7 @@ body {
     margin: 0;
     padding: 0;
     color: black;
-    font-weight: 300px;
+    font-weight: 300;
 }
 
 .team .team_cards .card .botton p {
@@ -557,7 +566,7 @@ body {
     margin: 0;
     padding: 0;
     color: black;
-    font-weight: 300px;
+    font-weight: 300;
 }
 
 .team  button {
@@ -579,6 +588,8 @@ body {
     flex-direction: column;
     margin: 0 100px;
     margin-bottom: 70px;
+    max-width: 1240px;
+    width: calc(100% - 200px);
 
 }
 .contact_us .contact {
@@ -606,7 +617,7 @@ body {
     align-items: center;
     gap: 30px;
     margin-top: 70px;
-    width: 1240px;
+    width: 100%;
     height: 773px;
     background-color: var(--white-main);
     border-radius: 45px;
@@ -632,7 +643,8 @@ body {
     cursor: pointer;
 }
 
-.contact_us .form_contact form input[type="text"] {
+.contact_us .form_contact form input[type="text"],
+.contact_us .form_contact form input[type="email"] {
     width: 556px;
     height: 59px;
     border-radius: 14px;
@@ -676,11 +688,12 @@ body {
 
 /*Footer*/
 footer {
-    width: 1241px;
+    width: calc(100% - 320px);
+    max-width: 1240px;
     height: 450px;
     background-color: var(--black-main);
     color: white;
-    margin: 0 100px;
+    margin: 0 auto;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
     padding: 55px 60px 50px 60px;
@@ -897,7 +910,7 @@ footer .container_foot .bot a {
 
     @keyframes tickerMove {
         from {
-            transform: translateX(0); /* error intencional */
+            transform: translateX(0);
         }
         to {
             transform: translateX(-50%);
@@ -1102,17 +1115,108 @@ footer .container_foot .bot a {
 
 
     .team {
-        margin: 0 50px;
-        display: none;
+        margin: 0;
+        width: 100%;
     }
+
+    .team .meet_our_team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team .meet_our_team p {
+        width: 100%;
+        height: auto;
+    }
+
+    .team .team_cards {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .team .team_cards .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .team button {
+        align-self: center;
+    }
+
     .contact_us {
-        margin: 0 50px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .contact_us .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_us .contact p {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact_us .form_contact {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 24px 0;
+    }
+
+    .contact_us .form_contact form {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        height: auto;
+    }
+
+    .contact_us .form_contact form input[type="text"],
+    .contact_us .form_contact form input[type="email"],
+    .contact_us .form_contact form #message,
+    .contact_us .form_contact form input[type="submit"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact_us .form_contact img {
         display: none;
     }
+
     footer {
-        margin: 0 50px;
-        width: 1091px;
-        display: none;
+        margin: 0;
+        width: calc(100% - 40px);
+        height: auto;
+        padding: 32px 20px;
+        border-radius: 24px 24px 0 0;
+    }
+
+    footer .container_foot .top,
+    footer .container_foot .mid,
+    footer .container_foot .bot {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    footer .container_foot .top .links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    footer .container_foot .mid .right {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    footer .container_foot .mid .right input,
+    footer .container_foot .mid .right #suscrib,
+    footer .container_foot .mid .right #email {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
     }
 }
-
